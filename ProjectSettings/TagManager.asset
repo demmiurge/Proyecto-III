@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Bubble
   - Glue
+  - Checkpoint
+  - Death
+  - Checked
   layers:
   - Default
   - TransparentFX
