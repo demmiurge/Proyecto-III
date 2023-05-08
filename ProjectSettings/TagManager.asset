@@ -10,6 +10,7 @@ TagManager:
   - Death
   - Checked
   - Enemy
+  - MobilePlatform
   layers:
   - Default
   - TransparentFX
