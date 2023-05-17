@@ -15,6 +15,7 @@ TagManager:
   - Wall
   - BubbleBullet
   - EnemyProjectile
+  - Coin
   layers:
   - Default
   - TransparentFX
