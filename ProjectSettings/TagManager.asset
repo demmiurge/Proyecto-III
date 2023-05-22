@@ -16,6 +16,7 @@ TagManager:
   - BubbleBullet
   - EnemyProjectile
   - Coin
+  - Heart
   layers:
   - Default
   - TransparentFX
