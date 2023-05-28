@@ -17,6 +17,7 @@ TagManager:
   - EnemyProjectile
   - Coin
   - Heart
+  - DecorativeWater
   layers:
   - Default
   - TransparentFX
