@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Beta/BetaRecovery.unity
-    guid: 89442ee980ff62347ad14c1b57ba223d
-  - enabled: 1
     path: Assets/Scenes/Developers/WillCoreSystem/MainMenu.unity
     guid: 92687d799ff664e47b68e34289162faf
   - enabled: 1
