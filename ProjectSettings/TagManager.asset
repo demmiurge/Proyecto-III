@@ -19,6 +19,7 @@ TagManager:
   - Heart
   - DecorativeWater
   - Floor
+  - video
   layers:
   - Default
   - TransparentFX
