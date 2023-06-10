@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{2d026f47-7845-48e9-b2d4-12e0bd5a2c26}">
+		<property name="assetPath">
+			<value>Guille/Entorno/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{77ea5f1a-d048-41d7-9217-1a626dbca3bf}</destination>
+		</relationship>
+	</object>
+</objects>

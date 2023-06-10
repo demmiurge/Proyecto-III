@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{e3249223-246e-4a43-9005-9df277f1bd2f}">
+		<property name="assetPath">
+			<value>Alex/sand_landing/Sports, Field, Volleyball, Beach, Jump, Dive Into Sand 02 SND60946 2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.93272916666666672</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{77ea5f1a-d048-41d7-9217-1a626dbca3bf}</destination>
+		</relationship>
+	</object>
+</objects>

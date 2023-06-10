@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{775784dc-c0b6-488c-a3ec-2d84f1d640a6}">
+		<property name="assetPath">
+			<value>Alex/hit/Cloth, Handle, Hits And Grabs SND4053 4.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.67083333333333328</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{77ea5f1a-d048-41d7-9217-1a626dbca3bf}</destination>
+		</relationship>
+	</object>
+</objects>

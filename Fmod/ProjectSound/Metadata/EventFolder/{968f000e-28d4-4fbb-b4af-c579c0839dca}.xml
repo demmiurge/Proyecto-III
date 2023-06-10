@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EventFolder" id="{968f000e-28d4-4fbb-b4af-c579c0839dca}">
+		<property name="note">
+			<value>Sonido de impulso sobre distintas superficies, realizando un salto.
+Cada superficie debe tener un mínimo de 2 sonidos.</value>
+		</property>
+		<property name="name">
+			<value>jump</value>
+		</property>
+		<relationship name="folder">
+			<destination>{1804e75b-fedb-4416-b27c-5e956487fd4f}</destination>
+		</relationship>
+	</object>
+</objects>
