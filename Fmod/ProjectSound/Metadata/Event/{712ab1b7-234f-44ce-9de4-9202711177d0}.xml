@@ -57,7 +57,7 @@ Tratarlo con cuidado, se puede malinterpretar.</value>
 			<destination>{03bdc374-0f8b-4325-a8f5-10a13ea9664a}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{300eddd1-7213-4af8-9443-57c7ab46eeec}</destination>
+			<destination>{b0b8efa3-53f0-4ab5-85dd-d6bb934b87e9}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{642a9b45-5d78-45ad-b763-f75709635f4e}" />

@@ -57,7 +57,7 @@ Una especie de grito o un gemido de dolor apagándose.</value>
 			<destination>{bdd3c9d4-8661-4790-afa3-a7bece4d266a}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{300eddd1-7213-4af8-9443-57c7ab46eeec}</destination>
+			<destination>{b0b8efa3-53f0-4ab5-85dd-d6bb934b87e9}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{1cf6f7c9-c056-4ba8-a3c6-abee11b54202}" />

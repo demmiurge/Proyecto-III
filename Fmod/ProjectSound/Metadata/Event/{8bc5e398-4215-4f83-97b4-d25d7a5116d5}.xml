@@ -57,7 +57,7 @@ Minimo de 3 sonidos distintos.</value>
 			<destination>{76bc6056-720f-400a-8cbe-13dd0eb8101e}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{300eddd1-7213-4af8-9443-57c7ab46eeec}</destination>
+			<destination>{b0b8efa3-53f0-4ab5-85dd-d6bb934b87e9}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{5f5387d5-3c45-4bef-a145-11c9112068c5}" />

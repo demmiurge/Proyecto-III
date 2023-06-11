@@ -57,7 +57,7 @@ Es preferible que el sonido parezca que se esté escuchando dentro del agua.</va
 			<destination>{9984c6ec-001d-44cd-8520-0552cb4630c4}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{300eddd1-7213-4af8-9443-57c7ab46eeec}</destination>
+			<destination>{b0b8efa3-53f0-4ab5-85dd-d6bb934b87e9}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{70b29849-aa90-4454-bb03-72d3b6a6df8b}" />
