@@ -20,6 +20,9 @@ TagManager:
   - DecorativeWater
   - Floor
   - video
+  - Stone
+  - Sand
+  - Grass
   layers:
   - Default
   - TransparentFX
