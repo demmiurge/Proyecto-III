@@ -5,7 +5,7 @@
 			<value>pain received</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{dc070277-89e1-41e3-959c-fe7773f24290}</destination>
@@ -116,6 +116,7 @@
 	<object class="MixerBusEffectChain" id="{d22bfe81-3684-49f7-9f18-7b6a3a260a3c}">
 		<relationship name="effects">
 			<destination>{04565b3d-347b-46d7-b2ce-950028bbedc8}</destination>
+			<destination>{474d4935-67c2-4828-a014-bfc8454d4525}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{95d09baf-312e-42b5-9d20-23918dedfa21}" />
@@ -127,5 +128,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{e7efa1f3-5696-4c31-8989-8e87bc58d02a}" />
 	<object class="MixerBusFader" id="{04565b3d-347b-46d7-b2ce-950028bbedc8}" />
+	<object class="SpatialiserEffect" id="{474d4935-67c2-4828-a014-bfc8454d4525}" />
 	<object class="MixerBusFader" id="{1b7d170d-ddcf-40ba-b255-22d3f413e2bb}" />
 </objects>
