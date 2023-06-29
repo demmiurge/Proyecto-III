@@ -108,6 +108,9 @@
 		<property name="length">
 			<value>0.59999999999999998</value>
 		</property>
+		<property name="volume">
+			<value>-24</value>
+		</property>
 		<relationship name="fadeOutCurve">
 			<destination>{65670226-b41f-462b-8974-5211da7b9e17}</destination>
 		</relationship>

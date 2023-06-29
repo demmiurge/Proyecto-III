@@ -98,6 +98,9 @@
 		<property name="name">
 			<value>Absorcio</value>
 		</property>
+		<property name="volume">
+			<value>-24</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{1fb7c17f-f9da-428f-b2e6-62897981549a}</destination>
 		</relationship>
