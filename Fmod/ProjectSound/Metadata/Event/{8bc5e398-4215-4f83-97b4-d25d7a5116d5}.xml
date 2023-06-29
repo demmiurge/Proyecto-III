@@ -96,6 +96,9 @@ Minimo de 3 sonidos distintos.</value>
 		<property name="length">
 			<value>0.39000000000000001</value>
 		</property>
+		<property name="volume">
+			<value>-24</value>
+		</property>
 		<relationship name="sounds">
 			<destination>{08072e6b-dbc0-40b3-aad2-347f92dce31d}</destination>
 			<destination>{0cc1a04a-043a-427e-8f78-7afabef826d0}</destination>

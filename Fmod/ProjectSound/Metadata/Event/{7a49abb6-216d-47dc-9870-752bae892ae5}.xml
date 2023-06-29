@@ -93,7 +93,7 @@
 			<value>0.75</value>
 		</property>
 		<property name="volume">
-			<value>-12</value>
+			<value>-40</value>
 		</property>
 		<relationship name="sounds">
 			<destination>{8d1cf35c-deda-434b-9be0-a0c283562aec}</destination>

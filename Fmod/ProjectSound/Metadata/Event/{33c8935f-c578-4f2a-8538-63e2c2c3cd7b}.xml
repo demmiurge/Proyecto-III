@@ -99,6 +99,9 @@ Es preferible que el sonido parezca que se esté escuchando dentro del agua.</va
 		<property name="timelockedOffset">
 			<value>0.40000000000000002</value>
 		</property>
+		<property name="volume">
+			<value>-24</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{76df4173-efae-44f0-b012-2c4b1065d081}</destination>
 		</relationship>
