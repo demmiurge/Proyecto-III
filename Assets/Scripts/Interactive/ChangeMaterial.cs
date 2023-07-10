@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:97865aaefe48317fe136012c892fd4ea9aacf514fbe185bd22af442dd102a4ab
-size 814
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ChangeMaterial : MonoBehaviour
+{
+    [SerializeField] private List<Renderer> renderers;
+
+    [SerializeField] private Material onMaterial;
+    [SerializeField] private Material offMaterial;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void Activate()
+    {
+        if (gameObject.GetComponent<Renderer>())
+            gameObject.GetComponent<Renderer>().material = onMaterial;
+    }
+
+    public void Deactivate()
+    {
+        if (gameObject.GetComponent<Renderer>())
+            gameObject.GetComponent<Renderer>().material = offMaterial;
+    }
+}

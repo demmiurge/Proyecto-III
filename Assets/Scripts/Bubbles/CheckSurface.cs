@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b0b2d2293e107e135f97616bc774b8f659919e7ffec6646ff7126f723359e986
-size 607
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CheckSurface : MonoBehaviour
+{
+    [SerializeField] private GlueBehavior glueBehavior;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        glueBehavior.CollisionWithThisSurface(other.gameObject);
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        glueBehavior.ReleaseSurfaceContact(other.gameObject);
+    }
+}

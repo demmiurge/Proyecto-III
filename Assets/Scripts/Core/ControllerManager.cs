@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:38ae46e1e5336b798874529a63487c4a151cf767118445ae8c8fa483a53c106f
-size 524
+using UnityEngine;
+
+public class ControllerManager : MonoBehaviour
+{
+    bool controllerIsMouse;
+
+    public void SetControllerIsMouse(bool isActive) => controllerIsMouse = isActive;
+    public bool GetControllerIsMouse() => controllerIsMouse;
+
+    public void ActiveCursor()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
+    }
+
+    public void DeactivateCursor()
+    {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+}

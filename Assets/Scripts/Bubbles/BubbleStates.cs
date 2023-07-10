@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e41527d2f8e8e87d1b20c83437afb04a9be31a87b2016680376b2a4896a91369
-size 805
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BubbleStates : MonoBehaviour
+{
+    // El script nos permitirá inyectar información
+    [SerializeField] private List<string> bubbleStates;
+    private BubbleBehaviourV1 bubbleBehaviour;
+
+    private List<string> stickySurfaces;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        stickySurfaces = new List<string>();
+        bubbleBehaviour = GetComponent<BubbleBehaviourV1>();
+
+        stickySurfaces = bubbleBehaviour.GetStickySurfaces();
+
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == tag)
+        {
+
+        }
+    }
+}

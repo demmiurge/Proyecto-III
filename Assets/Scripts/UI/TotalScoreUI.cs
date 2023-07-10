@@ -1,3 +1,53 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:64fb7621adb8bbc278651b0b9f0c04b3692b1dbfa844e17af40b0c88a046a39e
-size 1123
+using TMPro;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class TotalScoreUI : MonoBehaviour, IBasicUI
+{
+    private int currentScore;
+
+    [SerializeField] private int totalScore = 0;
+    [SerializeField] private TextMeshProUGUI scoreTextMeshPro;
+
+    void Awake()
+    {
+        
+    }
+
+    void Start()
+    {
+        currentScore = 0;
+        GameManager.instance.SetTotalScoreUI(this);
+        UpdateUI();
+    }
+
+    public void AddScore()
+    {
+        scoreTextMeshPro.GetComponent<PlayAnimation>().ActivateSpecialEvent();
+        currentScore++;
+        UpdateUI();
+    }
+
+    public void LoadCheckpoint(int desiredScore)
+    {
+        currentScore = desiredScore;
+        UpdateUI();
+    }
+
+    public void HideScoreText()
+    {
+        scoreTextMeshPro.GetComponent<PlayAnimation>().OnCallDisappearHear();
+    }
+
+    public void ResetScore()
+    {
+        currentScore = 0;
+        UpdateUI();
+    }
+
+    public void UpdateUI()
+    {
+        scoreTextMeshPro.SetText(currentScore.ToString() + "/" + totalScore);
+    }
+}

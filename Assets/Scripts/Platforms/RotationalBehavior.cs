@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9251c0c2e0cf2a6b683f3065c6379da563d6d34425c7d894d7c97f5059a5d7ef
-size 610
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class RotationalBehavior : MonoBehaviour
+{
+    [SerializeField] private Transform pointToRotate;
+    [SerializeField] private float speedRotation;
+    [SerializeField] private Vector3 axisOfRotation = Vector3.right; // Eje de rotación predeterminado: eje Y
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        pointToRotate.Rotate(axisOfRotation, speedRotation * Time.deltaTime);
+    }
+}

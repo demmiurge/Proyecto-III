@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e66157a90ddbe40a84a24376e30f4beed8bd3ba5edc8243614ad2492efe32feb
-size 468
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class LookToPlayer : MonoBehaviour
+{
+    [SerializeField] private Vector3 rotationSetting;
+
+    void Update()
+    {
+        Vector3 direccion = Camera.main.transform.position - transform.position;
+        Quaternion rotacion = Quaternion.LookRotation(direccion);
+        rotacion *= Quaternion.Euler(rotationSetting);
+        transform.rotation = rotacion;
+    }
+}

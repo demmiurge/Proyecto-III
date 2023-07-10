@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1d43fe1a454ca7911b77dcf99d868dcfaa1bdcc22f231425be9c724648db04cc
-size 350
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ResetProto : MonoBehaviour
+{
+    public GameObject player;
+    public GameObject spawnPoint;
+
+    private void OnTriggerEnter(Collider other)
+    {
+        player.transform.position = spawnPoint.transform.position;
+        
+        
+    }
+}

@@ -1,3 +1,242 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:46c4251e8493e80ff7e8a4dd8376c90be0eb6dee9dce406315039247767719f8
-size 8023
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5196172581677369175
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4852439216743865837}
+  - component: {fileID: 8428636611582775880}
+  - component: {fileID: 5988801373673531010}
+  m_Layer: 0
+  m_Name: tejadomix
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4852439216743865837
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5196172581677369175}
+  m_LocalRotation: {x: 0.0027917253, y: -0.7071014, z: -0.7071012, w: -0.0027917253}
+  m_LocalPosition: {x: -87.85, y: 70.03, z: 125.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4671553022148907405}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: -180.452}
+--- !u!33 &8428636611582775880
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5196172581677369175}
+  m_Mesh: {fileID: -6831440722055496184, guid: 6d93ac919b6339546918840ee3b23b81, type: 3}
+--- !u!23 &5988801373673531010
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5196172581677369175}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 78077e5c7e5c77047a0f879114c4e64c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &5449179720004848439
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 6251816367606244344, guid: 5d0689bf6cb02f948b4a7e85dc2b321c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2115998898328856783}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4671553022148907405}
+  - component: {fileID: 8609592950522486312}
+  - component: {fileID: 5809534004865100514}
+  m_Layer: 0
+  m_Name: tejado_1 (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4671553022148907405
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 6739981472592361794, guid: 5d0689bf6cb02f948b4a7e85dc2b321c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2115998898328856783}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5449179720004848439}
+  m_LocalRotation: {x: -0.00000011920929, y: -4.656613e-10, z: 0.0000037979335, w: 1}
+  m_LocalPosition: {x: 0.17000052, y: 0.0013420582, z: -2.7900012}
+  m_LocalScale: {x: 1, y: 1, z: -1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4852439216743865837}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: -180.452}
+--- !u!33 &8609592950522486312
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 7649050491327608551, guid: 5d0689bf6cb02f948b4a7e85dc2b321c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2115998898328856783}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5449179720004848439}
+  m_Mesh: {fileID: -6831440722055496184, guid: 6d93ac919b6339546918840ee3b23b81, type: 3}
+--- !u!23 &5809534004865100514
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 5603064718480310829, guid: 5d0689bf6cb02f948b4a7e85dc2b321c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2115998898328856783}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5449179720004848439}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 78077e5c7e5c77047a0f879114c4e64c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &2115998898328856783
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4852439216743865837}
+    m_Modifications:
+    - target: {fileID: 6251816367606244344, guid: 5d0689bf6cb02f948b4a7e85dc2b321c,
+        type: 3}
+      propertyPath: m_Name
+      value: tejado_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6739981472592361794, guid: 5d0689bf6cb02f948b4a7e85dc2b321c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 462
+      objectReference: {fileID: 0}
+    - target: {fileID: 6739981472592361794, guid: 5d0689bf6cb02f948b4a7e85dc2b321c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -88.020004
+      objectReference: {fileID: 0}
+    - target: {fileID: 6739981472592361794, guid: 5d0689bf6cb02f948b4a7e85dc2b321c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 67.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 6739981472592361794, guid: 5d0689bf6cb02f948b4a7e85dc2b321c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 125.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6739981472592361794, guid: 5d0689bf6cb02f948b4a7e85dc2b321c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.0027890396
+      objectReference: {fileID: 0}
+    - target: {fileID: 6739981472592361794, guid: 5d0689bf6cb02f948b4a7e85dc2b321c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.0027890396
+      objectReference: {fileID: 0}
+    - target: {fileID: 6739981472592361794, guid: 5d0689bf6cb02f948b4a7e85dc2b321c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071013
+      objectReference: {fileID: 0}
+    - target: {fileID: 6739981472592361794, guid: 5d0689bf6cb02f948b4a7e85dc2b321c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071013
+      objectReference: {fileID: 0}
+    - target: {fileID: 6739981472592361794, guid: 5d0689bf6cb02f948b4a7e85dc2b321c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6739981472592361794, guid: 5d0689bf6cb02f948b4a7e85dc2b321c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6739981472592361794, guid: 5d0689bf6cb02f948b4a7e85dc2b321c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -180.452
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5d0689bf6cb02f948b4a7e85dc2b321c, type: 3}

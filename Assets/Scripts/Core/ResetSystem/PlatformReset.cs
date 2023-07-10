@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9fe570a88b15fb95cacef6070797c005bdace804f7c2a425de3d60639d4bdc76
-size 315
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlatformReset : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}

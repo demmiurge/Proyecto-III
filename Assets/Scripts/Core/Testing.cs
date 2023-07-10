@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6af5c025563dc05455d6a682b3203a34aed7345ea711b59aa6b7ccae5c9064b3
-size 570
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Testing : MonoBehaviour
+{
+    private PauseController pauseController;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (pauseController == null && GameManager.instance.GetPauseController()) pauseController = GameManager.instance.GetPauseController();
+
+        pauseController.PauseTime();
+        pauseController.ResumeTime();
+    }
+}

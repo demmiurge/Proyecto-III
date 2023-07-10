@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fdcad0c7852ebd2171a713734f82fc894bab299b40a8dc2fbf0fde457a35a37a
-size 990
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerScoreCollector : MonoBehaviour
+{
+    [SerializeField] private string scoreTag;
+    [SerializeField] private string finisherTag;
+
+    private TotalScoreUI totalScoreUI;
+    private GameFinisher gameFinisher;
+
+    void Update()
+    {
+        if (totalScoreUI == null && GameManager.instance.GetTotalScoreUI()) totalScoreUI = GameManager.instance.GetTotalScoreUI();
+        if (gameFinisher == null && GameManager.instance.GetGameFinisher()) gameFinisher = GameManager.instance.GetGameFinisher();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == scoreTag)
+            CollectScore(other.gameObject);
+
+        if (other.tag == finisherTag)
+            gameFinisher.GameFinish();
+    }
+
+    void CollectScore(GameObject scoreGameObject)
+    {
+        totalScoreUI.AddScore();
+        scoreGameObject.SetActive(false);
+    }
+}

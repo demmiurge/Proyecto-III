@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:406f4e45372d82cb82f2c0cd959c70019ce40b4b00497de9086122a11a5c75e9
-size 285
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PauseController : MonoBehaviour
+{
+    public void PauseTime()
+    {
+        Time.timeScale = 0f;
+    }
+
+    public void ResumeTime()
+    {
+        Time.timeScale = 1f;
+    }
+}

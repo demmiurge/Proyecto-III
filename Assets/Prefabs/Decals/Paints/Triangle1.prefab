@@ -1,3 +1,73 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:35e293511fc9f96be5a19af8883d49545942e4cfeea4442856da51e0456bd570
-size 2195
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5662991068825735754
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5662991068825735756}
+  - component: {fileID: 5662991068825735757}
+  - component: {fileID: 5662991068825735755}
+  m_Layer: 14
+  m_Name: Triangle1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &5662991068825735756
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5662991068825735754}
+  m_LocalRotation: {x: -0.47283217, y: 0.6167292, z: 0.46446082, w: 0.42467752}
+  m_LocalPosition: {x: -7.751, y: -0.298, z: -60.15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -77.032, y: 157.853, z: -57.246}
+--- !u!114 &5662991068825735757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5662991068825735754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ab7465f7765ec4e875b7bc8ceb2afa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  perform: 1
+  raycastDistance: 5
+  offset: 0.0125
+--- !u!114 &5662991068825735755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5662991068825735754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0777d029ed3dffa4692f417d4aba19ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: 07a2abb03c8c35048866c14e782dc5c5, type: 2}
+  m_DrawDistance: 1000
+  m_FadeScale: 0.9
+  m_StartAngleFade: 180
+  m_EndAngleFade: 180
+  m_UVScale: {x: 1, y: 1}
+  m_UVBias: {x: 0, y: 0}
+  m_ScaleMode: 0
+  m_Offset: {x: 0, y: 0, z: 0.5}
+  m_Size: {x: 1.3, y: 1.3, z: 1}
+  m_FadeFactor: 1

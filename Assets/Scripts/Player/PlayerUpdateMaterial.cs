@@ -1,3 +1,51 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0470fa6a27145021a2c12bbe27c074e7eb435c3fedfeb474e108314f6bbc6e80
-size 1391
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerUpdateMaterial : MonoBehaviour
+{
+    [SerializeField] private List<Renderer> renderers;
+    [SerializeField] private string propertyName;
+    [SerializeField] private Color startColor;
+    [SerializeField] private Color endColor;
+    [SerializeField] private AnimationCurve interpolationCurve;
+
+    private float duration;
+
+    private float currentTime = 0f;
+    private bool isInterpolating = false;
+
+    public void StartInterpolation(float duration)
+    {
+        if (isInterpolating)
+            return;
+
+        this.duration = duration;
+        currentTime = 0f;
+        isInterpolating = true;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            StartInterpolation(1);
+        }
+
+        if (isInterpolating)
+        {
+            currentTime += Time.deltaTime;
+            float t = currentTime / duration;
+
+            float curveValue = interpolationCurve.Evaluate(t);
+
+            Color currentColor = Color.Lerp(startColor, endColor, curveValue);
+
+            foreach (Renderer renderer in renderers)
+                renderer.materials[0].SetColor(propertyName, currentColor);
+
+            if (currentTime >= duration)
+                isInterpolating = false;
+        }
+    }
+}

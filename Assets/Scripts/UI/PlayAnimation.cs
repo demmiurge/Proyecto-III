@@ -1,3 +1,43 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ae2534e769abbdf0f48db65c2449f43bcf28fed5b3d7ad8979b32973ef618d30
-size 1193
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayAnimation : MonoBehaviour
+{
+    [SerializeField] private string animationName;
+    [SerializeField] private string disappearAnimationName;
+    [SerializeField] private string actionWhenInteracting;
+
+    [SerializeField] private Animation animation;
+
+    [SerializeField] private bool deactivateObject = true;
+
+    void Awake()
+    {
+        if (animation == null && GetComponent<Animation>()) animation = GetComponent<Animation>();
+    }
+
+    void OnEnable()
+    {
+        if (animation == null) animation = GetComponent<Animation>();
+        animation.Play(animationName);
+    }
+
+    public void ActivateSpecialEvent()
+    {
+        animation.Play(actionWhenInteracting);
+    }
+
+    public void OnCallDisappearHear()
+    {
+        if (animation == null) animation = GetComponent<Animation>();
+        animation.Play(disappearAnimationName);
+
+        if (deactivateObject) Invoke("DeactivateGameObject", animation.GetClip(disappearAnimationName).length);
+    }
+
+    private void DeactivateGameObject()
+    {
+        gameObject.SetActive(false);
+    }
+}

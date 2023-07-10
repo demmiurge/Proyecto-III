@@ -1,3 +1,81 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:af7d3402c7aa54c6080310f397b1431e56a442c71702b6f026e39fef1297dade
-size 2368
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3524729248298112364
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CartoonWaterBase
+  m_Shader: {fileID: -6465566751694194690, guid: af2a2e9301ad160409042c57d392291a,
+    type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BUILTIN_QueueControl: -1
+    - _BUILTIN_QueueOffset: 0
+    - _Displacement_Speed: 0.15
+    - _Erosion: 0
+    - _FadeAmount: 12.94
+    - _FoamAmount: 24.75
+    - _FoamCutoff: -8.16
+    - _FoamOffset: 1.76
+    - _FoamScale: 1.5
+    - _FoamSpeed: 0.18
+    - _NormalStrength: 2
+    - _QueueControl: 1
+    - _QueueOffset: 0
+    - _RippleAmount: 7.3
+    - _Smoothness: 1
+    - _Transparency: 20.4
+    - _VertexOffset: 0.15
+    - _VoronoiScale: 6.3
+    - _VoronoiSpeed: 0.15
+    m_Colors:
+    - _BaseColor: {r: 0, g: 0.8215716, b: 1, a: 1}
+    - _Direction: {r: 10, g: -100, b: 0, a: 0}
+    - _Emission: {r: 0, g: 0.5717969, b: 1, a: 1}
+    - _FoamColor: {r: 13.149394, g: 13.149394, b: 13.149394, a: 1}
+    - _Normal_Speed: {r: 0.1, g: 0.01, b: 0, a: 0}
+    - _RippleColor: {r: 0.72901183, g: 2.7749484, b: 2.9160473, a: 1}
+    - _Scale: {r: 2, g: 2, b: 0, a: 0}
+    - _Speed: {r: 2, g: 2, b: 0, a: 0}
+    - _Vector2: {r: 2, g: 2, b: 0, a: 0}
+    - _VertexOffset2D: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []

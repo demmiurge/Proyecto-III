@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1c229219e1a6e99f593dbd07c1680db3c17fc19b641d2e9b13b876a59b994885
-size 499
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class PlayerUI : MonoBehaviour
+{
+    private HUDManager hudManager;
+
+    public void OnPauseMenu(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            hudManager.GoToPauseMenuScreen();
+        }
+    }
+
+    void Update()
+    {
+        if (hudManager == null) hudManager = GameManager.instance.GetHUDManager();
+    }
+}

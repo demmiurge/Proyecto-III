@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4451c42c2b38fa18f4ba7e1a5f2ac09437eceedf8e21975ad8db7a3d2e0e467b
-size 1190
+using FMODUnity;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class SoundEmitterSettings : MonoBehaviour
+{
+    private StudioEventEmitter studioEventEmitter;
+
+    [SerializeField] private string identifierParameter = "SingleVolume";
+    [SerializeField] [Range(0.0f, 1.0f)] private float desiredValue = 1;
+    
+    private float latestValue;
+
+    void Update()
+    {
+        if (latestValue != desiredValue) // Ignore precision
+        {
+            desiredValue = Mathf.Round(desiredValue * 100f) / 100f;
+            studioEventEmitter.SetParameter(identifierParameter, desiredValue);
+            latestValue = desiredValue;
+        }
+    }
+
+    void Awake()
+    {
+        studioEventEmitter = GetComponent<StudioEventEmitter>();
+        studioEventEmitter.SetParameter(identifierParameter, desiredValue);
+    }
+
+    void Start()
+    {
+        studioEventEmitter = GetComponent<StudioEventEmitter>();
+        studioEventEmitter.SetParameter(identifierParameter, desiredValue);
+    }
+
+    public void SetSoundPower()
+    {
+        studioEventEmitter.SetParameter(identifierParameter, desiredValue);
+    }
+}

@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a1bea87c2042ad11ab0187c8b7707f441f2bc44594d6f8be553ad466a9d9c757
-size 411
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ParticleInstantiator : MonoBehaviour
+{
+    [SerializeField] private GameObject objectWithTheParticleSystem;
+
+    void OnDisable()
+    {
+        if (!gameObject.scene.isLoaded) return;
+        Instantiate(objectWithTheParticleSystem, transform.position, Quaternion.identity, null);
+    }
+}

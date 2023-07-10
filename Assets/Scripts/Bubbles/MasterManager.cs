@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cec6df10f263100daef839e16747be8d96c6e11079a34501cc19338dc2dbfda8
-size 796
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+
+public class MasterManager : MonoBehaviour
+{
+    public static MasterManager Instance { get; private set; }
+
+    //public AudioManager AudioManager { get; private set; }
+    //public UIManager UIManager { get; private set; }
+
+    [SerializeField] private BubbleManagerV1 bubbleManager;
+
+    public BubbleManagerV1 GetBubbleManager() => bubbleManager;
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this);
+            return;
+        }
+
+        Instance = this;
+        //AudioManager = GetComponentInChildren<AudioManager>();
+        //UIManager = GetComponentInChildren<UIManager>();
+    }
+}

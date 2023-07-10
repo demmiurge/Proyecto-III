@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:959f8e8923e0b13b7ad952c45e7ecac3d512c96330c98b286661c49e528b5eab
-size 530
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class DeleteBubbleDebug : MonoBehaviour
+{
+    [SerializeField] private KeyCode keyHide;
+    [SerializeField] private BubbleManager bubbleManager;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown(keyHide))
+        {
+            bubbleManager.HideBubble(gameObject);
+        }
+    }
+}

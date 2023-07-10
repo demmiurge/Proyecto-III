@@ -1,3 +1,46 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0ed6df8f59daf6f87d532c0dc543528e668ab0b0c3a9151f0243c5b740a37307
-size 1278
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CheckpointManager : MonoBehaviour
+{
+    private List<Checkpoint> checkpointReachedList;
+    [SerializeField] private GameObject checkpointPrefab;
+
+    // Saneamos la lista, comprobamos que no pueda ser nula
+    public void CheckCheckpointList()
+    {
+        if (checkpointReachedList == null)
+            checkpointReachedList = new List<Checkpoint>();
+    }
+
+    public void AddNewCheckpoint(Checkpoint checkpoint)
+    {
+        CheckCheckpointList();
+        if (checkpoint.IsReached() == false)
+            checkpointReachedList.Add(checkpoint);
+    }
+
+    public void CreateFirstCheckpoint(Transform position)
+    {
+        GameObject gameObjectCheckpoint = Instantiate(checkpointPrefab, position);
+        gameObjectCheckpoint.transform.parent = null;
+    }
+
+    public bool AreThereCheckpoints()
+    {
+        CheckCheckpointList();
+        return checkpointReachedList.Count > 0;
+    }
+
+    public Transform GetLastCheckpointChecked()
+    {
+        return checkpointReachedList[^1].GetDesiredSpawnPoint();
+    } 
+
+    public void ClearSavedList()
+    {
+        CheckCheckpointList();
+        checkpointReachedList.Clear();
+    }
+}

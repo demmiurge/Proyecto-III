@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5263d8f49079ecb1476e04b26ac0689bae69e7d5e74ffd781c13126f02389bc0
-size 494
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Oscillate : MonoBehaviour
+{
+    public float speed = 1.0f;
+    public float height = 0.5f;
+
+    private float originalY;
+
+
+    void Start()
+    {
+        originalY = transform.localPosition.y;
+    }
+
+    void Update()
+    {
+        Vector3 v = transform.localPosition;
+        v.y = originalY + height * Mathf.Sin(Time.time * speed);
+        transform.localPosition = v;
+    }
+}

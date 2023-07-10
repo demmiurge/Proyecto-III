@@ -1,3 +1,68 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9cbf0d664eda326f2da8bc3be2a0cc9ede4dde4debe25911e24b0350d6c7abe0
-size 1937
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3524729248298112364
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Foam 1
+  m_Shader: {fileID: -6465566751694194690, guid: bbb81fbb3ac5cd9419d7204c87cd1196,
+    type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3001
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BUILTIN_QueueControl: -1
+    - _BUILTIN_QueueOffset: 0
+    - _Erosion: 0
+    - _FadeAmount: 5.35
+    - _QueueControl: 0
+    - _QueueOffset: 1
+    - _RippleAmount: 0.3
+    - _VertexOffset: -0.12
+    - _VoronoiScale: 15
+    - _VoronoiSpeed: 0.73
+    m_Colors:
+    - _Emission: {r: 0.9150943, g: 0.9150943, b: 0.9150943, a: 1}
+    - _RippleColor: {r: 204.47542, g: 204.47542, b: 204.47542, a: 1}
+    - _Scale: {r: 2, g: 2, b: 0, a: 0}
+    - _Speed: {r: 0, g: 0.2, b: 0, a: 0}
+    - _Vector2: {r: 0, g: 0, b: 0, a: 0}
+    - _VertexOffset2D: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []

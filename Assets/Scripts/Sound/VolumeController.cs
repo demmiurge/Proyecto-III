@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:035dc84bd5eac3b8a88dd5c73432efd13da21dc5a148139b0ce9882cf66bf5d6
-size 522
+using FMOD.Studio;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class VolumeController : MonoBehaviour
+{
+    [SerializeField] private Bus fmodBus; // Asigna el bus FMOD deseado en el Inspector
+
+    public void SetVolume(float volume)
+    {
+        fmodBus.setVolume(volume);
+    }
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}

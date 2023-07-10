@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:74afc57b4eac07af1c0945b40c5355f5e6d5724d052656633aefbc6454cdd563
-size 315
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class TestScriptJMA : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}

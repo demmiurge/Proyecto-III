@@ -1,3 +1,47 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fc80f6298215cde51b648369274e8bc4b7d54ba0c07971a9f2493511bec9a028
-size 1192
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Checkpoint : MonoBehaviour
+{
+    // Por defecto, siempre el punto de control siempre estará desactivado
+    private bool reached;
+
+    public bool IsReached() => reached;
+
+    public void SetReached(bool statusReached) => reached = statusReached;
+
+    private CheckpointManager checkpointManager;
+
+    [SerializeField] private Transform desiredSpawnPoint;
+
+    public Transform GetDesiredSpawnPoint() => desiredSpawnPoint;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        CheckManagersInstance();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        CheckManagersInstance();
+    }
+
+    private void OnTriggerEnter(Collider collider)
+    {
+        CheckManagersInstance();
+
+        if (collider.tag == "Player" && reached == false)
+        {
+            checkpointManager.AddNewCheckpoint(this);
+            reached = true;
+        }
+    }
+
+    void CheckManagersInstance()
+    {
+        if (checkpointManager == null) checkpointManager = GameManager.instance.GetCheckpointManager();
+    }
+}

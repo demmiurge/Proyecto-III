@@ -1,3 +1,64 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:757491be47fda4088c3bfe02ac604b4e7c2c1c234debc9b97156b4782c3d6f48
-size 1974
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.UI;
+
+public class SliderController : MonoBehaviour
+{
+    enum SOUND_CLASSIFICATION
+    {
+        MUSIC,
+        SFX,
+        MASTER
+    }
+
+    [SerializeField] private SOUND_CLASSIFICATION soundClassification;
+    [SerializeField] private Slider volumeSlider;
+    [SerializeField] private VolumeController volumeControl;
+    
+    private AudioSettings audioSettings;
+
+    private void Start()
+    {
+        volumeSlider.onValueChanged.AddListener(OnVolumeChanged);
+    }
+
+    void Update()
+    {
+        if (audioSettings == null && GameManager.instance.GetAudioSettings())
+        {
+            audioSettings = GameManager.instance.GetAudioSettings();
+            switch (soundClassification)
+            {
+                case SOUND_CLASSIFICATION.MUSIC:
+                    volumeSlider.SetValueWithoutNotify(audioSettings.GetMusicVolumeLevel());
+                    break;
+                case SOUND_CLASSIFICATION.SFX:
+                    volumeSlider.SetValueWithoutNotify(audioSettings.GetSFXVolumeLevel());
+                    break;
+                case SOUND_CLASSIFICATION.MASTER:
+                    volumeSlider.SetValueWithoutNotify(audioSettings.GetMasterVolumeLevel());
+                    break;
+            }
+        }
+    }
+
+    private void OnVolumeChanged(float volume)
+    {
+        switch (soundClassification)
+        {
+            case SOUND_CLASSIFICATION.MUSIC:
+                audioSettings.SetMusicVolumeLevel(volume);
+                break;
+            case SOUND_CLASSIFICATION.SFX:
+                audioSettings.SetSFXVolumeLevel(volume);
+                break;
+            case SOUND_CLASSIFICATION.MASTER:
+                audioSettings.SetMasterVolumeLevel(volume);
+                break;
+        }
+    }
+}

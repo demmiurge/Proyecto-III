@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:358b1682c156a9233ac52d2404bcaabeb1b6bbf403b29b3e7efb59c79faf7aa9
-size 407
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class EventListenerCore : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void OnFinisher()
+    {
+        GameManager.instance.MainMenu();
+    }
+}

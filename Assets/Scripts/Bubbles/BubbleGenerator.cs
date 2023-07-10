@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9bc50def115921983dcc9847975d1a6e3ce67d1d5bc2fedf574291fd4d44468a
-size 677
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BubbleGenerator : MonoBehaviour
+{
+    [SerializeField] private Transform bubbleSpawnPoint;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void SpawnBubble(GameObject bubble)
+    {
+        Rigidbody rbBubble = bubble.GetComponent<Rigidbody>();
+
+        rbBubble.isKinematic = true;
+
+        bubble.transform.position = bubbleSpawnPoint.transform.position;
+
+        rbBubble.isKinematic = false;
+    }
+}

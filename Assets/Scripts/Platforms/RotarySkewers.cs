@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8cfa4b0ea8ba10616b5a436baa9a1793cb4b600ece6d863bfe38128ac5f1e246
-size 484
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class RotarySkewers : MonoBehaviour
+{
+    [SerializeField] private float rotationSpeed = 10f;
+    [SerializeField] private Transform platform;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        platform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
+    }
+}

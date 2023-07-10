@@ -1,3 +1,44 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ff2e83a001ffc2d26ee094e657607f17c0ffe6dde505b712cd244145144ea70e
-size 1088
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class EnemyIdentifier : MonoBehaviour
+{
+    bool isAdded;
+
+    private EnemyResetter enemyResetter;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        CheckManagersInstance();
+        AddEnemyOnList();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        CheckManagersInstance();
+    }
+
+    void AddEnemyOnList()
+    {
+        if (isAdded) return;
+
+        if (GetComponent<EnemigoAereoV2>())
+        {
+            EnemigoAereoV2 enemy = GetComponent<EnemigoAereoV2>();
+            enemyResetter.AddEnemy(enemy);
+        }
+        if (GetComponent<EnemigoTerrestreV2>())
+        {
+            EnemigoTerrestreV2 enemy = GetComponent<EnemigoTerrestreV2>();
+            enemyResetter.AddEnemy(enemy);
+        }
+    }
+
+    void CheckManagersInstance()
+    {
+        if (enemyResetter == null && GameManager.instance.GetEnemyResetter()) enemyResetter = GameManager.instance.GetEnemyResetter();
+    }
+}

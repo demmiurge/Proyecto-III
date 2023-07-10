@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e498b556b62b568cb189dfac651005f8e301b950024de4e6a56c6bbe4403f068
-size 850
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class FadeOut : MonoBehaviour
+{
+    public float fadeSpeed = 0.5f;  //Velocidad de FadeOut
+    public SkinnedMeshRenderer skinnedMeshRenderer; 
+    public EnemigoAereoV2 enemyAereoScript;
+
+    private void Start()
+    {
+        //skinnedMeshRenderer = GetComponent<SkinnedMeshRenderer>();
+    }
+
+    private void Update()
+    {
+        foreach (Material material in skinnedMeshRenderer.materials)
+        {
+            Color color = material.color;
+            color.a -= fadeSpeed * Time.deltaTime;
+            material.color = color;
+        }
+
+        if (skinnedMeshRenderer.material.color.a <= 0f) //FadeOut completo
+        {
+            gameObject.SetActive(false);
+            enemyAereoScript.DropItem();
+        }
+    }
+}
