@@ -28,6 +28,7 @@ public class HUDManager : MonoBehaviour
 
     private PauseController pauseController;
     private ControllerManager controllerManager;
+    private GameFinisher gameFinisher;
 
     private bool changeDenied = false;
 
@@ -63,6 +64,7 @@ public class HUDManager : MonoBehaviour
     {
         if (pauseController == null && GameManager.instance.GetPauseController()) pauseController = GameManager.instance.GetPauseController();
         if (controllerManager == null && GameManager.instance.GetControllerManager()) controllerManager = GameManager.instance.GetControllerManager();
+        if (gameFinisher == null && GameManager.instance.GetGameFinisher()) gameFinisher = GameManager.instance.GetGameFinisher();
     }
 
     void Update()
@@ -134,6 +136,9 @@ public class HUDManager : MonoBehaviour
 
     public void GoToMainMenuScreen()
     {
+        // Al volver al menu principal reinicia el estado de finalización
+        gameFinisher.ResetEndStatus();
+
         // Siempre que se muestra el menú principal se reanuda el tiempo por si no se contempla su procedencia
         // Escalamos el tiempo de todos los objetos a 0
         pauseController?.ResumeTime();

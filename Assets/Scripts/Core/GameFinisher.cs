@@ -44,6 +44,14 @@ public class GameFinisher : MonoBehaviour
         }
     }
 
+    public void ResetEndStatus()
+    {
+        isFinished = false;
+        timer = 0.0f;
+        sequenceStep = 0;
+        actionPerformed = false;
+    }
+
     public void GameFinish()
     {
         isFinished = true;
