@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
+using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
@@ -104,6 +106,10 @@ public class GameManager : MonoBehaviour
     public GameObject GetPlayer() => player;
     public void SetPlayer(GameObject player) => this.player = player;
 
+    // Button pressed
+    private bool onChangeScenePerformed;
+    private AsyncOperation asyncLoad = new AsyncOperation();
+
     private void Awake()
     {
         //lock (lockObject)
@@ -155,24 +161,32 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
+        if (onChangeScenePerformed) return;
+        onChangeScenePerformed = true;
+
         audioSettings.StopAllSounds();
         coroutine = StartCoroutine(LoadYourAsyncScene(gameSceneName));
     }
 
     public void MainMenu()
     {
+        if (onChangeScenePerformed) return;
+        onChangeScenePerformed = true;
+
         audioSettings.StopAllSounds();
         coroutine = StartCoroutine(LoadYourAsyncScene(mainMenuSceneName));
     }
 
     IEnumerator LoadYourAsyncScene(string sceneName)
     {
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);
+        asyncLoad = SceneManager.LoadSceneAsync(sceneName);
 
-        // Wait until the asynchronous scene fully loads
+        // Espere hasta que la escena asincrónica se cargue por completo
         while (!asyncLoad.isDone)
         {
             yield return null;
         }
+
+        onChangeScenePerformed = false;
     }
 }
