@@ -13,8 +13,8 @@ public class BubbleBehaviourV1 : MonoBehaviour
 
     [SerializeField] private float sequentialHideTimer = 2.5f;
 
-    [SerializeField] private float timeOfLife = 10.0f;
-    private float restTime;
+    //[SerializeField] private float timeOfLife = 10.0f;
+    //private float restTime;
 
     // La lista que hará la burbuja de las colisiones con las que mantiene contacto
     private List<GameObject> connections;
@@ -60,7 +60,7 @@ public class BubbleBehaviourV1 : MonoBehaviour
     {
         NormalizeBubble();
 
-        restTime = timeOfLife;
+        // restTime = timeOfLife;
 
         if (targetTransform) 
         {
@@ -105,6 +105,7 @@ public class BubbleBehaviourV1 : MonoBehaviour
 
         if (desiredScaleAchieved == false) IncreaseSize();
 
+        /*
         if (restTime >= 0)
             restTime -= Time.deltaTime;
         else
@@ -124,6 +125,7 @@ public class BubbleBehaviourV1 : MonoBehaviour
             particleSystemManager.GenerateDestructionParticlesForTheLargeBubble(transform.position);
             gameObject.SetActive(false);
         }
+        */
     }
 
     public void DestroyBubble()
