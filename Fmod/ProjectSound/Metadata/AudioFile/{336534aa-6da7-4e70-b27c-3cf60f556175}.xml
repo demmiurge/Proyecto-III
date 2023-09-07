@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{336534aa-6da7-4e70-b27c-3cf60f556175}">
+		<property name="assetPath">
+			<value>Will/SoundExtra/lavaSoundGood.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>62.453333333333333</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{77ea5f1a-d048-41d7-9217-1a626dbca3bf}</destination>
+		</relationship>
+	</object>
+</objects>

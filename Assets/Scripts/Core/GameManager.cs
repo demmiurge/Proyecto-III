@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
@@ -166,6 +165,13 @@ public class GameManager : MonoBehaviour
 
         audioSettings.StopAllSounds();
         coroutine = StartCoroutine(LoadYourAsyncScene(gameSceneName));
+    }
+
+    public void ResetScene()
+    {
+        audioSettings.StopAllSounds();
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentScene);
     }
 
     public void MainMenu()
