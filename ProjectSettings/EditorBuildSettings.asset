@@ -12,6 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Gold/Gameplay.unity
     guid: 54b566f0a00aef24ebca0fee16222e93
   m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 77991dbb2a79ae14b869da07926532c0,
+      type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 5d04da66dfca8bf4c91022edb84af949,
       type: 2}
     com.unity.localization.settings: {fileID: 11400000, guid: c56f9089c05361246aeb6df147f5a869,
