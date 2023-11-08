@@ -155,6 +155,26 @@ MonoBehaviour:
     m_Localized: YOU DIED
     m_Metadata:
       m_Items: []
+  - m_Id: 93263479709696
+    m_Localized: RESUME
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93916302155776
+    m_Localized: OPTIONS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94321438367744
+    m_Localized: MAIN MENU
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94400018653184
+    m_Localized: EXIT GAME
+    m_Metadata:
+      m_Items: []
+  - m_Id: 95303870193664
+    m_Localized: PAUSE MENU
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

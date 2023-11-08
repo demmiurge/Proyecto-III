@@ -151,6 +151,26 @@ MonoBehaviour:
     m_Key: ui.death_screen
     m_Metadata:
       m_Items: []
+  - m_Id: 93263479709696
+    m_Key: ui.menu.pause_menu.resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93916302155776
+    m_Key: ui.menu.pause_menu.options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94321438367744
+    m_Key: ui.menu.pause_menu.main_menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94400018653184
+    m_Key: ui.menu.pause_menu.exit_game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 95303870193664
+    m_Key: ui.menu.pause_menu.pause_menu
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

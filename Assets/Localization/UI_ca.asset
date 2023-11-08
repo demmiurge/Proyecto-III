@@ -159,6 +159,26 @@ MonoBehaviour:
     m_Localized: HAS MORT
     m_Metadata:
       m_Items: []
+  - m_Id: 93263479709696
+    m_Localized: CONTINUAR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93916302155776
+    m_Localized: OPCIONS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94321438367744
+    m_Localized: "MEN\xDA PRINCIPAL"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94400018653184
+    m_Localized: SORTIR DEL JOC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 95303870193664
+    m_Localized: "MEN\xDA DE PAUSA"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
