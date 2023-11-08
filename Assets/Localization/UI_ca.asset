@@ -17,7 +17,144 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 2d550fb7e5728884ba607fae90370b51, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 25349021913088
+    m_Localized: INICIAR PARTIDA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25364008161280
+    m_Localized: OPCIONS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25377660620800
+    m_Localized: SORTIR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25390344196096
+    m_Localized: OPCIONS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25404067958784
+    m_Localized: IDIOMA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25424234172416
+    m_Localized: CONTROLS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25439836983296
+    m_Localized: SO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25454772899840
+    m_Localized: "GR\xC0FICS"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25466680528896
+    m_Localized: ENRERE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25476784607232
+    m_Localized: CONTROLS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25490504175616
+    m_Localized: Moure Personatge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25538856112128
+    m_Localized: "Moure C\xE0mera"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25550298173440
+    m_Localized: Saltar/Ascendir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25561169809408
+    m_Localized: Descendir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25570229506048
+    m_Localized: Apuntar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25583248625664
+    m_Localized: Disparar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25594724241408
+    m_Localized: Destruir Bombolla
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25609286864896
+    m_Localized: Pausar Joc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25621840416768
+    m_Localized: SO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25631634116608
+    m_Localized: Global
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25644858757120
+    m_Localized: "M\xFAsica"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25658075009024
+    m_Localized: Efectes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25669919723520
+    m_Localized: "GR\xC0FICS"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25682938843136
+    m_Localized: "Utilitza WASD per a moure el personatge i el ratol\xED per a moure
+      la c\xE0mera."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25694011805696
+    m_Localized: "Utilitza el Bot\xF3 dret del ratol\xED per a apuntar i el bot\xF3
+      esquerre per a disparar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25707467132928
+    m_Localized: Per a ascendir o descendir dins una bombolla utilitza l'Espai i
+      Ctrl.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25738710503424
+    m_Localized: "Utilitza el joystick esquerre per a moure el personatge i el joystick
+      dret per a moure la c\xE0mera."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25773066047488
+    m_Localized: Utilitza el gallet esquerre per a apuntar i el gallet dret per a
+      disparar.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25787628670976
+    m_Localized: Per a ascendir o descendir dins una bombolla utilitza A i B.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25952989106176
+    m_Localized: Idioma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25969766322176
+    m_Localized: "Catal\xE0"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31274633940992
+    m_Localized: per Saltar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31256195780608
+    m_Localized: Mantenir
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
