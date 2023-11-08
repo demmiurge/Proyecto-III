@@ -151,6 +151,10 @@ MonoBehaviour:
     m_Localized: to Skip
     m_Metadata:
       m_Items: []
+  - m_Id: 77510428860416
+    m_Localized: YOU DIED
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

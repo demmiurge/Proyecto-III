@@ -147,6 +147,10 @@ MonoBehaviour:
     m_Key: ui.tutorial.close_tutorial_second
     m_Metadata:
       m_Items: []
+  - m_Id: 77510428860416
+    m_Key: ui.death_screen
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

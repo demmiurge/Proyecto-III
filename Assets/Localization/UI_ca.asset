@@ -155,6 +155,10 @@ MonoBehaviour:
     m_Localized: Mantenir
     m_Metadata:
       m_Items: []
+  - m_Id: 77510428860416
+    m_Localized: HAS MORT
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
