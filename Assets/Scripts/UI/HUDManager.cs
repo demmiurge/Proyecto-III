@@ -13,6 +13,7 @@ public class HUDManager : MonoBehaviour
     [SerializeField] private GameObject mainMenuScreen;
     [SerializeField] private GameObject pauseMenuScreen;
     [SerializeField] private GameObject menuOptionsScreen;
+    [SerializeField] private GameObject languageOptionsScreen; // NEW
     [SerializeField] private GameObject soundOptionsScreen;
     [SerializeField] private GameObject controlsOptionsScreen;
     [SerializeField] private GameObject graphicOptionsScreen;
@@ -95,6 +96,7 @@ public class HUDManager : MonoBehaviour
         mainMenuScreen.SetActive(false);
         pauseMenuScreen.SetActive(false);
         menuOptionsScreen.SetActive(false);
+        languageOptionsScreen.SetActive(false);
         soundOptionsScreen.SetActive(false);
         controlsOptionsScreen.SetActive(false);
         graphicOptionsScreen.SetActive(false);
@@ -208,6 +210,12 @@ public class HUDManager : MonoBehaviour
 
         TurnOffAllInterfaces();
         creditsScreen.SetActive(true);
+    }
+
+    public void GoToLanguageOptionsScreen()
+    {
+        TurnOffAllInterfaces();
+        languageOptionsScreen.SetActive(true);
     }
 
     public void ExitOptionsMenu()

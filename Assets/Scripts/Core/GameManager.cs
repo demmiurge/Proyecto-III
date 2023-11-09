@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Localization;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
@@ -16,16 +17,10 @@ public enum GameState
 
 public class GameManager : MonoBehaviour
 {
-    //private static GameManager localInstance;
-    //private static object lockObject = new object();
-
-    //public static GameManager instance
-    //{
-    //    get
-    //    {
-    //        return localInstance;
-    //    }
-    //}
+    // NEW
+    private Locale currentLocale;
+    public Locale GetLocale() => currentLocale;
+    public void SetLocale(Locale locale) => currentLocale = locale;
 
     public static GameManager instance;
 
@@ -111,17 +106,6 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        //lock (lockObject)
-        //{
-        //    if (localInstance == null)
-        //    {
-        //        localInstance = this;
-        //        DontDestroyOnLoad(gameObject);
-        //    }
-        //    else
-        //        Destroy(gameObject);
-        //}
-
         if (instance == null)
         {
             instance = this;
