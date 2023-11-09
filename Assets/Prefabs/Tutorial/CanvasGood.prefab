@@ -69,7 +69,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Use WASD to move the character and the mouse to move the camera
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 07f57dd05cbd4b94ebd88f8ecde402b1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e067e9dfe772e245aebdf03f8d8cd74, type: 2}
   m_sharedMaterial: {fileID: -4331006472449420756, guid: 07f57dd05cbd4b94ebd88f8ecde402b1,
     type: 2}
   m_fontSharedMaterials: []
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &8638689011969839732
@@ -323,8 +323,8 @@ MonoBehaviour:
   m_text: Use the left joystick to move the character and the right joystick to move
     the camera
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 07f57dd05cbd4b94ebd88f8ecde402b1, type: 2}
-  m_sharedMaterial: {fileID: -4331006472449420756, guid: 07f57dd05cbd4b94ebd88f8ecde402b1,
+  m_fontAsset: {fileID: 11400000, guid: 0e067e9dfe772e245aebdf03f8d8cd74, type: 2}
+  m_sharedMaterial: {fileID: -7209969375944442040, guid: 0e067e9dfe772e245aebdf03f8d8cd74,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -388,7 +388,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &5430109629947478833
@@ -1257,8 +1257,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: to Skip
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 07f57dd05cbd4b94ebd88f8ecde402b1, type: 2}
-  m_sharedMaterial: {fileID: -4331006472449420756, guid: 07f57dd05cbd4b94ebd88f8ecde402b1,
+  m_fontAsset: {fileID: 11400000, guid: 0e067e9dfe772e245aebdf03f8d8cd74, type: 2}
+  m_sharedMaterial: {fileID: -7209969375944442040, guid: 0e067e9dfe772e245aebdf03f8d8cd74,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1319,7 +1319,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 12.5, y: 0, z: 0, w: 0}
+  m_margin: {x: 15, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1434,7 +1434,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: To swim up and down in the bubbles use Space and Ctrl
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 07f57dd05cbd4b94ebd88f8ecde402b1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e067e9dfe772e245aebdf03f8d8cd74, type: 2}
   m_sharedMaterial: {fileID: -4331006472449420756, guid: 07f57dd05cbd4b94ebd88f8ecde402b1,
     type: 2}
   m_fontSharedMaterials: []
@@ -1499,7 +1499,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &5281607425195937106
@@ -1879,7 +1879,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Use the Left Trigger to aim and the Right Trigger to shoot
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 07f57dd05cbd4b94ebd88f8ecde402b1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e067e9dfe772e245aebdf03f8d8cd74, type: 2}
   m_sharedMaterial: {fileID: -4331006472449420756, guid: 07f57dd05cbd4b94ebd88f8ecde402b1,
     type: 2}
   m_fontSharedMaterials: []
@@ -1944,7 +1944,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &3483947153877965456
@@ -2056,7 +2056,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: To swim up and down in the bubbles use A and B
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 07f57dd05cbd4b94ebd88f8ecde402b1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e067e9dfe772e245aebdf03f8d8cd74, type: 2}
   m_sharedMaterial: {fileID: -4331006472449420756, guid: 07f57dd05cbd4b94ebd88f8ecde402b1,
     type: 2}
   m_fontSharedMaterials: []
@@ -2121,7 +2121,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &6686845818837556004
@@ -2473,8 +2473,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: <
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 07f57dd05cbd4b94ebd88f8ecde402b1, type: 2}
-  m_sharedMaterial: {fileID: -4331006472449420756, guid: 07f57dd05cbd4b94ebd88f8ecde402b1,
+  m_fontAsset: {fileID: 11400000, guid: 0e067e9dfe772e245aebdf03f8d8cd74, type: 2}
+  m_sharedMaterial: {fileID: -7209969375944442040, guid: 0e067e9dfe772e245aebdf03f8d8cd74,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2610,7 +2610,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Use the Right Mouse Button to aim and the Left Mouse Button to shoot
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 07f57dd05cbd4b94ebd88f8ecde402b1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e067e9dfe772e245aebdf03f8d8cd74, type: 2}
   m_sharedMaterial: {fileID: -4331006472449420756, guid: 07f57dd05cbd4b94ebd88f8ecde402b1,
     type: 2}
   m_fontSharedMaterials: []
@@ -2675,7 +2675,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &9211967907549488341
@@ -2787,8 +2787,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Hold
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 07f57dd05cbd4b94ebd88f8ecde402b1, type: 2}
-  m_sharedMaterial: {fileID: -4331006472449420756, guid: 07f57dd05cbd4b94ebd88f8ecde402b1,
+  m_fontAsset: {fileID: 11400000, guid: 0e067e9dfe772e245aebdf03f8d8cd74, type: 2}
+  m_sharedMaterial: {fileID: -7209969375944442040, guid: 0e067e9dfe772e245aebdf03f8d8cd74,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2849,7 +2849,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 12.5, w: 0}
+  m_margin: {x: 0, y: 0, z: 15, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3039,8 +3039,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '>'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 07f57dd05cbd4b94ebd88f8ecde402b1, type: 2}
-  m_sharedMaterial: {fileID: -4331006472449420756, guid: 07f57dd05cbd4b94ebd88f8ecde402b1,
+  m_fontAsset: {fileID: 11400000, guid: 0e067e9dfe772e245aebdf03f8d8cd74, type: 2}
+  m_sharedMaterial: {fileID: -7209969375944442040, guid: 0e067e9dfe772e245aebdf03f8d8cd74,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
