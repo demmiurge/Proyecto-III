@@ -39,6 +39,9 @@ public class TutorialManager : MonoBehaviour
     [SerializeField] private GameObject holder;
     [SerializeField] private GameObject holderKB;
 
+    [SerializeField] private GameObject leftButton;
+    [SerializeField] private GameObject rightButton;
+
     private int index = 0;
 
     private void Awake()
@@ -111,11 +114,16 @@ public class TutorialManager : MonoBehaviour
         switch (index)
         {
             case -1:
-                index = 2;
+                index = 0;
                 ChangeContent();
                 break;
 
             case 0:
+                // Hide left button
+                leftButton.SetActive(false);
+                // Show right button
+                rightButton.SetActive(true);
+
                 HideContent();
                 video01.SetActive(true);
                 if (playerInputManage.GetGamepadActive() == false)
@@ -129,6 +137,11 @@ public class TutorialManager : MonoBehaviour
                 break;
 
             case 1:
+                // Show left button
+                leftButton.SetActive(true);
+                // Show right button
+                rightButton.SetActive(true);
+
                 HideContent();
                 video02.SetActive(true);
                 if (playerInputManage.GetGamepadActive() == false)
@@ -142,6 +155,11 @@ public class TutorialManager : MonoBehaviour
                 break;
 
             case 2:
+                // Show left button
+                leftButton.SetActive(true);
+                // Hide right button
+                rightButton.SetActive(false);
+
                 HideContent();
                 video03.SetActive(true);
                 if (playerInputManage.GetGamepadActive() == false)
